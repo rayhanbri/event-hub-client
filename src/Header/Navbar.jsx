@@ -62,7 +62,7 @@ const Navbar = () => {
                     }
                 </ul>
             </div>
-{/* 
+
             <div className="navbar-end space-x-2.5 md:space-x-4">
                 {
                     user &&
@@ -80,7 +80,7 @@ const Navbar = () => {
                             <Link to='/register' className='btn btn-primary'>Register</Link>
                         </>
                 }
-            </div> */}
+            </div>
         </div>
     );
 };
