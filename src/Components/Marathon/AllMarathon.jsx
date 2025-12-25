@@ -13,13 +13,11 @@ const AllMarathon = () => {
     const fetchWithToken = async () => {
       if (!user) throw new Error('Not authenticated');
 
-      const token = user?.accessToken;
 
       const response = await fetch(`https://assigment-11-server-ten.vercel.app/marathons/list?sort=${sortOrder}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
         }
       });
 

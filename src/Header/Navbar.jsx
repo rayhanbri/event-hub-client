@@ -9,7 +9,7 @@ const Navbar = () => {
         <NavLink to='/'
             className={({ isActive }) => isActive ? "border-b-2 text-blue-800 font-semibold" : "hover:text-blue-800 font-semibold"}
         >Home</NavLink>
-        <NavLink to='/show-marathon'
+        <NavLink to='/all-events'
             className={({ isActive }) => isActive ? "border-b-2 text-blue-800 font-semibold" : "hover:text-blue-800 font-semibold"}
         >Events</NavLink>
         <NavLink to='/show-marathon'

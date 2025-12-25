@@ -12,8 +12,8 @@ import Details from "../Home/Details";
 import MarathonReg from "../Home/MarathonReg";
 import { details } from "../API/Details";
 import AuthHook from "../Components/Hooks/AuthHook";
-import AllMarathon from "../Components/Marathon/AllMarathon";
 import ErrorPage from "../Components/Error.jsx/ErrorPage";
+import Events from "../Home/Events";
 
 
 export const router = createBrowserRouter([
@@ -41,8 +41,8 @@ export const router = createBrowserRouter([
         element:<MarathonReg></MarathonReg>
       },
       {
-        path:'/show-marathonn',
-        element:<PrivateRoute><AllMarathon></AllMarathon></PrivateRoute>
+        path:'/all-events',
+        element:<PrivateRoute><Events></Events></PrivateRoute>
       }
       ],
   },
