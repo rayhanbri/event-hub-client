@@ -14,7 +14,7 @@ const AllMarathon = () => {
       if (!user) throw new Error('Not authenticated');
 
 
-      const response = await fetch(`https://assigment-11-server-ten.vercel.app/marathons/list?sort=${sortOrder}`, {
+      const response = await fetch(`http://localhost:3000/event/list?sort=${sortOrder}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ const AllMarathon = () => {
   return (
     <div className='my-5'>
       <Helmet>
-        <title>Marathons</title>
+        <title>All Events</title>
       </Helmet>
       <div className="mb-4">
         <label htmlFor="sort" className="mr-2 font-semibold">Sort by Date:</label>

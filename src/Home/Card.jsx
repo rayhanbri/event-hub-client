@@ -19,7 +19,7 @@ const Card = ({ dataPromise }) => {
                     <div className="card-body items-start">
                             <h2 className="card-title "><strong>{event.name}</strong></h2>
                         <p><strong>Location:</strong><small className='text-gray-600'>{event.location}</small></p>
-                        <p><strong>Date:</strong><small className='text-gray-600'>{event.date}</small></p>
+                        <p><strong>Date:</strong><small className='text-gray-600'>{new Date(event.date).toISOString().split("T")[0]}</small></p>
                     </div>
                     <div className="card-actions">
                         <button onClick={()=>navigate(`/details/${event._id}`)} className="btn btn-primary w-full">See Details</button>
