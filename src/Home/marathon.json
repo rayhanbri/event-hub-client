@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "name": "Dhaka City Marathon",
+        "date": "2025-07-12",
+        "location": "Dhaka, Bangladesh",
+        "category": "Full Marathon",
+        "registerDeadline": "2025-07-01",
+        "distance": "42.195 KM",
+        "organizer": "Dhaka Athletics Federation",
+        "startTime": "6:00 AM",
+        "image": "https://img.freepik.com/free-vector/running-club-twitter-header_23-2151061230.jpg?uid=R202169446&ga=GA1.1.879808519.1749925192&semt=ais_hybrid&w=740",
+        "description": "Run through the bustling streets of Dhaka in the iconic Dhaka City Marathon. This full marathon offers runners a thrilling route past landmarks and vibrant neighborhoods. Join thousands of athletes as they challenge their limits in one of the region’s most exciting running events. Suitable for all skill levels."
+    },
+    {
+        "id": 2,
+        "name": "Chittagong Hill Run",
+        "date": "2025-08-05",
+        "location": "Chittagong, Bangladesh",
+        "category": "Half Marathon",
+        "registerDeadline": "2025-07-25",
+        "distance": "21.0975 KM",
+        "organizer": "Chittagong Sports Council",
+        "startTime": "6:30 AM",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-running-club-youtube-thumbnail_23-2151087925.jpg?uid=R202169446&ga=GA1.1.879808519.1749925192&semt=ais_hybrid&w=740",
+        "description": "The Chittagong Hill Run features a scenic route through rolling hills and green trails. This half marathon offers both beauty and challenge, making it ideal for runners seeking adventure. Feel the energy of the landscape and connect with nature as you take on this unique and unforgettable race."
+    },
+    {
+        "id": 3,
+        "name": "Sylhet River Dash",
+        "date": "2025-07-20",
+        "location": "Sylhet, Bangladesh",
+        "category": "10K Run",
+        "registerDeadline": "2025-07-10",
+        "distance": "10 KM",
+        "organizer": "Sylhet City Runners Club",
+        "startTime": "7:00 AM",
+        "image": "https://img.freepik.com/premium-photo/olympic-games-sports-background-with-copy-space-text_916191-81668.jpg?uid=R202169446&ga=GA1.1.879808519.1749925192&semt=ais_hybrid&w=740",
+        "description": "Enjoy a fast-paced run alongside the beautiful rivers of Sylhet. The Sylhet River Dash is perfect for beginners and seasoned runners looking to improve their pace. With clear views, enthusiastic supporters, and a welcoming atmosphere, this 10K promises a refreshing and memorable race experience."
+    },
+    {
+        "id": 4,
+        "name": "Cox’s Bazar Coastal Race",
+        "date": "2025-09-02",
+        "location": "Cox’s Bazar, Bangladesh",
+        "category": "Full Marathon",
+        "registerDeadline": "2025-08-20",
+        "distance": "42.195 KM",
+        "organizer": "Cox’s Bazar Tourism Board",
+        "startTime": "5:45 AM",
+        "image": "https://img.freepik.com/free-vector/running-club-facebook-post_23-2151016982.jpg?uid=R202169446&ga=GA1.1.879808519.1749925192&semt=ais_hybrid&w=740",
+        "description": "Experience the world’s longest sea beach while running the Cox’s Bazar Coastal Race. This full marathon mixes stunning beachside views with cool coastal air and a relaxed crowd. Designed for runners who love a blend of challenge and serenity, this race is an unforgettable tropical adventure."
+    },
+    {
+        "id": 5,
+        "name": "Rajshahi Heritage Run",
+        "date": "2025-07-30",
+        "location": "Rajshahi, Bangladesh",
+        "category": "Half Marathon",
+        "registerDeadline": "2025-07-15",
+        "distance": "21.0975 KM",
+        "organizer": "Rajshahi Running Community",
+        "startTime": "6:15 AM",
+        "image": "https://img.freepik.com/free-vector/never-give-up-sport-landing-page_23-2148278217.jpg?uid=R202169446&ga=GA1.1.879808519.1749925192&semt=ais_hybrid&w=740",
+        "description": "Explore the rich history of Rajshahi while participating in this unique half marathon. The Rajshahi Heritage Run takes you through ancient sites, lively bazaars, and peaceful riverbanks. Perfect for those who love culture and running, this race connects runners with the past in an energizing way."
+    },
+    {
+        "id": 6,
+        "name": "Khulna Freedom Sprint",
+        "date": "2025-08-15",
+        "location": "Khulna, Bangladesh",
+        "category": "5K Fun Run",
+        "registerDeadline": "2025-08-01",
+        "distance": "5 KM",
+        "organizer": "Khulna Youth Runners",
+        "startTime": "7:30 AM",
+        "image": "https://img.freepik.com/free-psd/running-club-landing-page-template_23-2148997324.jpg?uid=R202169446&ga=GA1.1.879808519.1749925192&semt=ais_hybrid&w=740",
+        "description": "Celebrate freedom and fitness with the Khulna Freedom Sprint! This 5K fun run is great for families, casual runners, and anyone who loves community events. With festive vibes, cheers from the crowd, and a friendly course, it’s more than a race—it’s a celebration of health and unity."
+    }
+]
