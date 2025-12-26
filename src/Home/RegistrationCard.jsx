@@ -3,14 +3,16 @@ import AuthHook from '../Components/Hooks/AuthHook';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { Helmet } from '@dr.pogodin/react-helmet';
+import { useNavigate } from 'react-router';
 
 const RegistrationCard = ({ dataPromise }) => {
+     const navigate = useNavigate();
     const { user } = AuthHook();
     const regData = use(dataPromise)
     console.log(regData)
     const email = user?.email || user?.providerData[0].email;
     const name = user?.displayName || "";
-    console.log(name)
+    // console.log(name)
   
 
 
@@ -20,9 +22,10 @@ const RegistrationCard = ({ dataPromise }) => {
         const formdata = new FormData(form);
         const userData = Object.fromEntries(formdata.entries())
         userData.eventId = regData._id
+       
         console.log(userData)
 
-        axios.post('https://assigment-11-server-ten.vercel.app/registration', userData)
+        axios.post('http://localhost:3000/registration', userData)
             .then(res => {
                 console.log(res.data)
                 Swal.fire({
@@ -32,6 +35,7 @@ const RegistrationCard = ({ dataPromise }) => {
                     showConfirmButton: false,
                     timer: 1500
                 });
+                navigate("/")
             })
             .catch(error => {
                 console.log(error)
@@ -53,7 +57,7 @@ const RegistrationCard = ({ dataPromise }) => {
                         <form onSubmit={handleReg} className="fieldset">
                             {/*  Name  */}
                             <label className="label">Name</label>
-                            <input type="text" name='name' className="input" placeholder="First Name" defaultValue={name} required />
+                            <input type="text" name='name' className="input" placeholder="First Name" defaultValue={regData?.name} required />
                             {/* Email  */}
                             <label className="label">Email</label>
                             <input type="email" defaultValue={email} name='email' className="input" placeholder="Email" required />
