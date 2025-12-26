@@ -14,7 +14,7 @@ const MyEvent = () => {
     const { user } = AuthHook();
     const userEmail = user?.email || user?.providerData[0].email;
 
-    console.log(userEmail)
+    // console.log(userEmail)
     useEffect(() => {
         const fetchRegistrations = async () => {
             try {
@@ -34,7 +34,7 @@ const MyEvent = () => {
         fetchRegistrations();
     }, [userEmail]);
 
-    console.log(registrations)
+    // console.log(registrations)
 
     const handleCancel = async (registrationId) => {
         // console.log(registrationId)
@@ -63,14 +63,16 @@ const MyEvent = () => {
     };
 
     const handleSubmitReview = async () => {
-        // Implement review submission: e.g., POST to /review with { eventId, comment, rating }
-        // Assume backend has an endpoint like POST /review
+        console.log(selectedRegistration,comment,rating)
         try {
-            const response = await fetch('/review', {
+            const response = await fetch('http://localhost:3000/review', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    eventId: selectedRegistration._id, // Adjust based on your data
+                    eventId: selectedRegistration._id,
+                    name:selectedRegistration?.name,
+                    email:selectedRegistration?.email,
+                    createdAt: new Date(),
                     comment,
                     rating,
                 }),
@@ -79,12 +81,20 @@ const MyEvent = () => {
                 setShowReviewModal(false);
                 setComment('');
                 setRating(1);
-                alert('Review submitted!');
+                // console.log('Review submitted!');
+
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: "Review Submitted",
+                    showConfirmButton: false,
+                    timer: 1500
+                });
             } else {
-                alert('Failed to submit review');
+                console.log('Failed to submit review');
             }
         } catch (err) {
-            alert('Error submitting review');
+            console.log('Error submitting review');
         }
     };
 

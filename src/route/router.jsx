@@ -15,6 +15,7 @@ import ErrorPage from "../Components/Error.jsx/ErrorPage";
 import Events from "../Home/Events";
 import EventReg from "../Home/EventReg";
 import MyEvent from "../Home/MyEvent";
+import Profile from "../Home/Profile";
 
 
 export const router = createBrowserRouter([
@@ -48,6 +49,10 @@ export const router = createBrowserRouter([
       {
         path:'/my-event',
         element:<PrivateRoute><MyEvent></MyEvent></PrivateRoute>
+      },
+      {
+        path:'/profile',
+        element:<PrivateRoute><Profile></Profile></PrivateRoute>
       }
       ],
   },
