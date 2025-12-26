@@ -53,7 +53,7 @@ const AddMarathon = () => {
                 </div>
                 <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <div className="card-body">
-                        <h1 className='text-4xl font-bold'>Add Marathon</h1>
+                        <h1 className='text-4xl font-bold'>Add Event</h1>
                         <form onSubmit={handleAdd} className="fieldset">
                             {/* Event Name */}
                             <label className="label">Event Name</label>
@@ -84,7 +84,7 @@ const AddMarathon = () => {
                             <input type="url" name="imageUrl" className="input input-bordered w-full" placeholder="https://image-link.com/photo.jpg" />
 
                             {/* Submit Button */}
-                            <button type="submit" className="btn btn-primary w-full mt-4">Add Marathon</button>
+                            <button type="submit" className="btn btn-primary w-full mt-4">Add Event</button>
                         </form>
 
                     </div>

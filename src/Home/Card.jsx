@@ -4,7 +4,7 @@ import { Navigate, useNavigate } from 'react-router';
 const Card = ({ dataPromise }) => {
     const events = use(dataPromise)
     const  navigate =useNavigate()
-    console.log(events)
+    // console.log(events)
     return (
         <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
             {
