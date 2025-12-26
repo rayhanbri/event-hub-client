@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const categories = [
   {
@@ -38,7 +39,7 @@ const CategoryCard = () => {
             </figure>
             <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white">
               <h3 className="text-2xl font-bold mb-2">{category.name}</h3>
-              <button className="btn btn-primary btn-sm">Explore Events</button>
+              <button className="btn btn-primary btn-sm"><Link to="/all-events">Explore Events</Link></button>
             </div>
           </div>
         ))}

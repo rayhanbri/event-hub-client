@@ -1,17 +1,15 @@
 import React from 'react';
-import logo from '../assets/Marathon Hub Simple Logo.png'
+import logo from '../assets/event.icon.png'
+
 
 const Footer = () => {
     return (
         <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
             <aside>
                 <img src={logo} className='w-18' alt="" />
-                <p>Marathon Hub
-                    <br />
-                    Run for life, Run for health
-                </p>
+                <p>Event Hub </p>
                 
-                    <p className='text-center mx-auto'>Copyright © {new Date().getFullYear()} - All right reserved by Marathon Hub</p>
+                    <p className='text-center mx-auto'>Copyright © {new Date().getFullYear()} - All right reserved by Event Hub</p>
                
             </aside>
             <nav>
