@@ -53,7 +53,11 @@ export const router = createBrowserRouter([
       {
         path:'/profile',
         element:<PrivateRoute><Profile></Profile></PrivateRoute>
-      }
+      },
+      {
+        path:'/add-event',
+        element:<PrivateRoute><AddMarathon></AddMarathon></PrivateRoute>
+      },
       ],
   },
   

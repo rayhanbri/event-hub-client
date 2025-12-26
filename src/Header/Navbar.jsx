@@ -15,7 +15,7 @@ const Navbar = () => {
         <NavLink to='/my-event'
             className={({ isActive }) => isActive ? "border-b-2 text-blue-800 font-semibold" : "hover:text-blue-800 font-semibold"}
         >My Bookings</NavLink>
-        <NavLink to='/show-marathon'
+        <NavLink to='/add-event'
             className={({ isActive }) => isActive ? "border-b-2 text-blue-800 font-semibold" : "hover:text-blue-800 font-semibold"}
         >Add Events</NavLink>
         <NavLink to='/profile'
