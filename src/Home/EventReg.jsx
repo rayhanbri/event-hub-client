@@ -3,13 +3,13 @@ import { useParams } from 'react-router';
 import { details } from '../API/Details';
 import RegistrationCard from './RegistrationCard';
 
-const MarathonReg = () => {
+
+const EventReg = () => {
     const {id} = useParams()
     // console.log(id)
     const dataPromise = details(id)
-    
     return (
-        <div>
+         <div>
           <Suspense>
             <RegistrationCard dataPromise={dataPromise}></RegistrationCard>
           </Suspense>
@@ -17,4 +17,4 @@ const MarathonReg = () => {
     );
 };
 
-export default MarathonReg;
+export default EventReg;

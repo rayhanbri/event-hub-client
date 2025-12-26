@@ -9,11 +9,11 @@ import Register from "../Header/Register";
 import AddMarathon from "../DashBoard/Add Marathon/AddMarathon";
 import PrivateRoute from "../Components/Auth/PrivateRoute";
 import Details from "../Home/Details";
-import MarathonReg from "../Home/MarathonReg";
 import { details } from "../API/Details";
 import AuthHook from "../Components/Hooks/AuthHook";
 import ErrorPage from "../Components/Error.jsx/ErrorPage";
 import Events from "../Home/Events";
+import EventReg from "../Home/EventReg";
 
 
 export const router = createBrowserRouter([
@@ -38,7 +38,7 @@ export const router = createBrowserRouter([
       },
       {
         path:'/event-register/:id',
-        element:<MarathonReg></MarathonReg>
+        element:<EventReg></EventReg>
       },
       {
         path:'/all-events',
