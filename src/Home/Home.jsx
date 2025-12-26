@@ -6,6 +6,7 @@ import MarathonCards from './MarathonCards ';
 // import Events from './Marathons';
 import FeaturedEvents from './FeaturedEvents';
 import Review from './Review';
+import CategoryCard from './CategoryCard';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
            {/* <Slider></Slider> */}
            <FeaturedEvents></FeaturedEvents>
            <Review></Review>
+           <CategoryCard></CategoryCard>
            {/* <Events></Events> */}
            {/* <MarathonCards></MarathonCards>
            <InfoSection></InfoSection>

@@ -18,7 +18,7 @@ const MyEvent = () => {
     useEffect(() => {
         const fetchRegistrations = async () => {
             try {
-                const response = await fetch(`http://localhost:3000/my-registration?email=${userEmail}`);
+                const response = await fetch(`https://event-hub-server-umber.vercel.app/my-registration?email=${userEmail}`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch registrations');
                 }
@@ -39,7 +39,7 @@ const MyEvent = () => {
     const handleCancel = async (registrationId) => {
         // console.log(registrationId)
         try {
-            const response = await fetch(`http://localhost:3000/registration/${registrationId}`, { method: 'DELETE' });
+            const response = await fetch(`https://event-hub-server-umber.vercel.app/registration/${registrationId}`, { method: 'DELETE' });
             if (response.ok) {
                 Swal.fire({
                     position: "center",
@@ -65,7 +65,7 @@ const MyEvent = () => {
     const handleSubmitReview = async () => {
         // console.log(selectedRegistration,comment,rating)
         try {
-            const response = await fetch('http://localhost:3000/review', {
+            const response = await fetch('https://event-hub-server-umber.vercel.app/review', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

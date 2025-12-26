@@ -18,7 +18,7 @@ const AddMarathon = () => {
         data.user_email = user?.email || user?.providerData[0]?.email;
 
         console.log(data)
-        axios.post('http://localhost:3000/event',  data )
+        axios.post('https://event-hub-server-umber.vercel.app/event',  data )
             .then(res => {
                 console.log(res.data)
                 Swal.fire({

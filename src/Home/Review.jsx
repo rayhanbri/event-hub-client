@@ -9,7 +9,7 @@ const Review = () => {
     useEffect(() => {
         const fetchReviews = async () => {
             try {
-                const response = await fetch('http://localhost:3000/review'); 
+                const response = await fetch('https://event-hub-server-umber.vercel.app/review'); 
                 if (!response.ok) {
                     throw new Error('Failed to fetch reviews');
                 }

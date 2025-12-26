@@ -25,7 +25,7 @@ const RegistrationCard = ({ dataPromise }) => {
        
         console.log(userData)
 
-        axios.post('http://localhost:3000/registration', userData)
+        axios.post('https://event-hub-server-umber.vercel.app/registration', userData)
             .then(res => {
                 console.log(res.data)
                 Swal.fire({

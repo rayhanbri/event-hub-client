@@ -3,7 +3,7 @@ import Card from './Card';
 import Spinner from '../Components/Auth/Spinner';
 
 const FeaturedEvents = () => {
-    const dataPromise = fetch('http://localhost:3000/events').then(res => res.json())
+    const dataPromise = fetch('https://event-hub-server-umber.vercel.app/events').then(res => res.json())
     // console.log(dataPromise)
     return (
         <div>

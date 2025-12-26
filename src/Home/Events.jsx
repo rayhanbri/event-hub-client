@@ -17,7 +17,7 @@ const Events = () => {
           if (!user) throw new Error('Not authenticated');
     
     
-          const response = await fetch(`http://localhost:3000/event/list?sort=${sortOrder}`, {
+          const response = await fetch(`https://event-hub-server-umber.vercel.app/event/list?sort=${sortOrder}`, {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
