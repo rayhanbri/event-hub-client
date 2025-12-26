@@ -12,7 +12,7 @@ const Navbar = () => {
         <NavLink to='/all-events'
             className={({ isActive }) => isActive ? "border-b-2 text-blue-800 font-semibold" : "hover:text-blue-800 font-semibold"}
         >Events</NavLink>
-        <NavLink to='/show-marathon'
+        <NavLink to='/my-event'
             className={({ isActive }) => isActive ? "border-b-2 text-blue-800 font-semibold" : "hover:text-blue-800 font-semibold"}
         >My Bookings</NavLink>
         <NavLink to='/show-marathon'

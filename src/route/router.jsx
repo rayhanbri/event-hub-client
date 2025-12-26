@@ -14,6 +14,7 @@ import AuthHook from "../Components/Hooks/AuthHook";
 import ErrorPage from "../Components/Error.jsx/ErrorPage";
 import Events from "../Home/Events";
 import EventReg from "../Home/EventReg";
+import MyEvent from "../Home/MyEvent";
 
 
 export const router = createBrowserRouter([
@@ -43,6 +44,10 @@ export const router = createBrowserRouter([
       {
         path:'/all-events',
         element:<PrivateRoute><Events></Events></PrivateRoute>
+      },
+      {
+        path:'/my-event',
+        element:<PrivateRoute><MyEvent></MyEvent></PrivateRoute>
       }
       ],
   },

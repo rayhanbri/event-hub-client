@@ -64,6 +64,9 @@ const RegistrationCard = ({ dataPromise }) => {
                             {/* Number of Tickets  */}
                             <label className="label">Number of Tickets</label>
                             <input type="text" name='tickets' className="input" placeholder="Total Tickets"   />
+                            {/* Date  */}
+                            <label className="label">Date</label>
+                            <input type="text" name='date' className="input" defaultValue={new Date(regData?.date).toISOString().split("T")[0]} placeholder="Date"   />
                             {/* Contact  */}
                             <label className="label">Contact</label>
                             <input type="text" name='contact' className="input" placeholder="Contact Info" required />
