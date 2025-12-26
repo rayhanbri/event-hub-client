@@ -9,7 +9,7 @@ import Register from "../Header/Register";
 import AddMarathon from "../DashBoard/Add Marathon/AddMarathon";
 import PrivateRoute from "../Components/Auth/PrivateRoute";
 import Details from "../Home/Details";
-import { details } from "../API/Details";
+import { details } from "../API/data_hook";
 import AuthHook from "../Components/Hooks/AuthHook";
 import ErrorPage from "../Components/Error.jsx/ErrorPage";
 import Events from "../Home/Events";

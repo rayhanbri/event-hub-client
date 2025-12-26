@@ -5,7 +5,7 @@ import { FaLocationDot } from 'react-icons/fa6';
 import { GiPathDistance } from 'react-icons/gi';
 import { MdAttachMoney, MdDateRange, MdEmail, MdEvent } from 'react-icons/md';
 import { useLoaderData, useNavigate } from 'react-router';
-import { details } from '../API/Details';
+import { details } from '../API/data_hook';
 import AuthHook from '../Components/Hooks/AuthHook';
 import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 import { Helmet } from '@dr.pogodin/react-helmet';

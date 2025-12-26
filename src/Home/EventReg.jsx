@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import { useParams } from 'react-router';
-import { details } from '../API/Details';
+import { details } from '../API/data_hook';
 import RegistrationCard from './RegistrationCard';
 
 
