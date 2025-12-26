@@ -37,7 +37,7 @@ export const router = createBrowserRouter([
         loader:({params}) =>details(params.id)
       },
       {
-        path:'/marathon-register/:id',
+        path:'/event-register/:id',
         element:<MarathonReg></MarathonReg>
       },
       {
