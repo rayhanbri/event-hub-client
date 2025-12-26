@@ -63,7 +63,7 @@ const MyEvent = () => {
     };
 
     const handleSubmitReview = async () => {
-        console.log(selectedRegistration,comment,rating)
+        // console.log(selectedRegistration,comment,rating)
         try {
             const response = await fetch('http://localhost:3000/review', {
                 method: 'POST',
