@@ -25,10 +25,16 @@ const Review = () => {
         fetchReviews();
     }, []);
 
-    if (loading) return <div className="text-center">Loading...</div>;
-    if (error) return <div className="text-center text-red-500">{error}</div>;
+    // if (loading) return <div className="text-center">Loading...</div>;
+    // if (error) return <div className="text-center text-red-500">{error}</div>;
     return (
         <div className="container mx-auto p-4 mt-6">
+            {
+                error && <div className="text-center text-red-500">{error}</div>
+            }
+            {
+                loading && <div className="text-center">Loading...</div>
+            }
             <h1 className="text-2xl font-bold mb-4">All Reviews</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {reviews.map((review) => (
