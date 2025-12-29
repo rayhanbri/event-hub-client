@@ -10,7 +10,7 @@ const Search = () => {
     useEffect(() => {
         setLoading(true);
 
-        fetch(`http://localhost:3000/find?search=${searchText}`)
+        fetch(`https://event-hub-server-umber.vercel.app/find?search=${searchText}`)
             .then(res => res.json())
             .then(data => {
                 setEvents(data);
@@ -18,7 +18,7 @@ const Search = () => {
             });
     }, [searchText]);
 
-    console.log(events[0])
+    // console.log(events[0])
 
     return (
         <div className='max-w-6xl mx-auto p-4'>

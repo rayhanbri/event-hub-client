@@ -10,7 +10,7 @@ const SocialLogin = ({from}) => {
         // console.log(from)
         userWithGoogle()
             .then(res => {
-                console.log(res.user)
+                // console.log(res.user)
                 Swal.fire({
                     position: "center",
                     icon: "success",
@@ -21,7 +21,7 @@ const SocialLogin = ({from}) => {
                 navigate(from)
             })
             .catch(error => {
-                console.log(error)
+                // console.log(error)
             })
     }
     return (

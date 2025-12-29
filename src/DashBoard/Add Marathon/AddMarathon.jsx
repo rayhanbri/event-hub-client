@@ -13,14 +13,14 @@ const AddMarathon = () => {
         const formData = new FormData(form)
         const data = Object.fromEntries(formData.entries())
        
-        console.log(data)
+        // console.log(data)
 
         data.user_email = user?.email || user?.providerData[0]?.email;
 
-        console.log(data)
+        // console.log(data)
         axios.post('https://event-hub-server-umber.vercel.app/event',  data )
             .then(res => {
-                console.log(res.data)
+                // console.log(res.data)
                 Swal.fire({
                     position: "center",
                     icon: "success",
@@ -30,7 +30,7 @@ const AddMarathon = () => {
                 });
             })
             .catch(error => {
-                console.log(error)
+                // console.log(error)
             })
 
     }

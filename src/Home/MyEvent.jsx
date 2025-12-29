@@ -50,10 +50,10 @@ const MyEvent = () => {
                 });
                 setRegistrations(registrations.filter(reg => reg._id !== registrationId));
             } else {
-                console.log('Failed to cancel event');
+                // console.log('Failed to cancel event');
             }
         } catch (err) {
-            console.log('Error canceling event');
+            // console.log('Error canceling event');
         }
     };
 
@@ -91,10 +91,10 @@ const MyEvent = () => {
                     timer: 1500
                 });
             } else {
-                console.log('Failed to submit review');
+                // console.log('Failed to submit review');
             }
         } catch (err) {
-            console.log('Error submitting review');
+            // console.log('Error submitting review');
         }
     };
 

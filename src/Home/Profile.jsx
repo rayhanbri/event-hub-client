@@ -28,10 +28,10 @@ const Profile = () => {
                 navigate('/')
             })
             .catch(err =>{
-                console.log(err)
+                // console.log(err)
             })
 
-        console.log(name, photo)
+        // console.log(name, photo)
     }
     return (
         <div className="container mx-auto p-4">

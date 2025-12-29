@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 
 
 const MyModal = ({ modals }) => {
-    console.log(modals)
+    // console.log(modals)
 
     const [modal, setModal] = useState({})
 
@@ -26,11 +26,11 @@ const MyModal = ({ modals }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(modal)
+        // console.log(modal)
 
         axios.put(`https://assigment-11-server-ten.vercel.app/update/${modal?._id}`, modal)
             .then(res => {
-                console.log(res.data)
+                // console.log(res.data)
                 Swal.fire({
                     position: "top-right",
                     icon: "success",
@@ -40,7 +40,7 @@ const MyModal = ({ modals }) => {
                 });
             })
             .catch(error => {
-                console.log(error)
+                // console.log(error)
             })
 
     }

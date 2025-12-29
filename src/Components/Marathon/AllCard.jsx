@@ -5,7 +5,7 @@ import { createResource } from '../../CreateResource/createResource';
 const AllCard = ({ dataResource }) => {
   const events = dataResource.read();
   const navigate = useNavigate();
-  console.log(events)
+  // console.log(events)
 
   return (
     <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>

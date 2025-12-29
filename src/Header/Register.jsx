@@ -43,11 +43,11 @@ const Register = () => {
         const email = form.email.value;
         const photo = form.photo.value;
         const password = form.password.value;
-        console.log(name, email, photo, password)
+        // console.log(name, email, photo, password)
 
         createUser(email, password)
             .then(res => {
-                console.log(res.user)
+                // console.log(res.user)
                 const user = res.user;
                 updateProfile(user, {
                     displayName: name,
@@ -64,7 +64,7 @@ const Register = () => {
 
             })
             .catch(error => {
-                console.log(error)
+                // console.log(error)
             })
 
     }

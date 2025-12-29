@@ -23,11 +23,11 @@ const RegistrationCard = ({ dataPromise }) => {
         const userData = Object.fromEntries(formdata.entries())
         userData.eventId = regData._id
        
-        console.log(userData)
+        // console.log(userData)
 
         axios.post('https://event-hub-server-umber.vercel.app/registration', userData)
             .then(res => {
-                console.log(res.data)
+                // console.log(res.data)
                 Swal.fire({
                     position: "center",
                     icon: "success",
@@ -38,7 +38,7 @@ const RegistrationCard = ({ dataPromise }) => {
                 navigate("/")
             })
             .catch(error => {
-                console.log(error)
+                // console.log(error)
             })
 
     }
