@@ -26,7 +26,7 @@ const Search = () => {
             <input
                 type="text"
                 placeholder="Search events..."
-                className="input input-bordered w-[30%] mb-6 mt-6 border-2 border-blue-600"
+                className="input input-bordered w-full md:w-[30%] mb-6 mt-6 border-2 border-blue-600"
                 onChange={(e) => setSearchText(e.target.value)}
             />
             <SearchCard events={events} loading={loading}></SearchCard>
