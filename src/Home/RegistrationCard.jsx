@@ -9,7 +9,7 @@ const RegistrationCard = ({ dataPromise }) => {
      const navigate = useNavigate();
     const { user } = AuthHook();
     const regData = use(dataPromise)
-    console.log(regData)
+    // console.log(regData)
     const email = user?.email || user?.providerData[0].email;
     const name = user?.displayName || "";
     // console.log(name)
