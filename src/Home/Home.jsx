@@ -7,11 +7,13 @@ import MarathonCards from './MarathonCards ';
 import FeaturedEvents from './FeaturedEvents';
 import Review from './Review';
 import CategoryCard from './CategoryCard';
+import Search from './Search';
 
 const Home = () => {
     return (
         <div>
            {/* <Slider></Slider> */}
+           <Search></Search>
            <FeaturedEvents></FeaturedEvents>
            <Review></Review>
            <CategoryCard></CategoryCard>
