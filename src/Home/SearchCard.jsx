@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router';
 
 const SearchCard = ({ events, loading }) => {
     const navigate = useNavigate();
-    console.log(events)
+    // console.log(events)
     return (
         <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
             {/* Loading */}
