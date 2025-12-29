@@ -9,7 +9,7 @@ const Review = () => {
     useEffect(() => {
         const fetchReviews = async () => {
             try {
-                const response = await fetch('https://event-hub-server-umber.vercel.app/review'); 
+                const response = await fetch('https://event-hub-server-umber.vercel.app/review');
                 if (!response.ok) {
                     throw new Error('Failed to fetch reviews');
                 }
@@ -29,13 +29,19 @@ const Review = () => {
     // if (error) return <div className="text-center text-red-500">{error}</div>;
     return (
         <div className="container mx-auto p-4 mt-6">
+
+            <h1 className="text-2xl font-bold mb-4">All Reviews</h1>
             {
                 error && <div className="text-center text-red-500">{error}</div>
             }
             {
                 loading && <div className="text-center">Loading...</div>
             }
-            <h1 className="text-2xl font-bold mb-4">All Reviews</h1>
+            {!loading && reviews.length === 0 && (
+                <div className="text-center text-gray-500">
+                    No reviews available
+                </div>
+            )}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {reviews.map((review) => (
                     <ReviewCard key={review._id} review={review} />
